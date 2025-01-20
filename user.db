@@ -1,0 +1,6 @@
+from app import db, User
+
+# Create a new admin user and commit to the database
+admin = User(username='admin', password='password')
+db.session.add(admin)
+db.session.commit()
